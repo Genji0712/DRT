@@ -1,0 +1,55 @@
+{
+  "name": "polimi.thuat.garbage",
+  "displayName": "Garbage-spots",
+  "version": "1.0.0",
+  "description": "A cross-platform mobile application that allows users with any level of competence to map garbage-spots on the field in an easy way.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "babel": ".\\node_modules\\.bin\\babel .\\www\\js --out-file .\\www\\js\\dist\\app.js --ignore \".\\www\\js\\lib\\*.js\",\".\\www\\js\\settings.js\" --no-comments"
+  },
+  "author": "Thuat",
+  "license": "MIT",
+  "dependencies": {
+    "@babel/polyfill": "^7.4.4",
+    "cordova-android": "^8.0.0",
+    "cordova-plugin-camera": "^4.1.0",
+    "cordova-plugin-device": "^2.0.2",
+    "cordova-plugin-file": "^6.0.1",
+    "cordova-plugin-geolocation": "^4.0.1",
+    "cordova-plugin-globalization": "^1.11.0",
+    "cordova-plugin-ionic-keyboard": "^2.1.3",
+    "cordova-plugin-network-information": "^2.0.1",
+    "cordova-plugin-whitelist": "^1.3.3",
+    "cordova-plugin-x-toast": "^2.7.2",
+    "cordova.plugins.diagnostic": "^4.0.12",
+    "objectorarray": "^1.0.5"
+  },
+  "cordova": {
+    "plugins": {
+      "cordova-plugin-whitelist": {},
+      "cordova-plugin-device": {},
+      "cordova-plugin-geolocation": {},
+      "cordova-plugin-globalization": {},
+      "cordova-plugin-network-information": {},
+      "cordova-plugin-x-toast": {},
+      "cordova-plugin-file": {},
+      "cordova.plugins.diagnostic": {
+        "ANDROID_SUPPORT_VERSION": "28.+"
+      },
+      "cordova-plugin-camera": {
+        "ANDROID_SUPPORT_V4_VERSION": "27.+"
+      },
+      "cordova-plugin-ionic-keyboard": {}
+    },
+    "platforms": [
+      "android"
+    ]
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.5.5",
+    "@babel/core": "^7.5.5",
+    "@babel/plugin-proposal-class-properties": "^7.5.5",
+    "@babel/preset-env": "^7.5.5"
+  }
+}
